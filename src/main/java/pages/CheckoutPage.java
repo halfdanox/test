@@ -24,15 +24,8 @@ public class CheckoutPage extends Menu {
 	
 
 
-	//public CheckoutPage(WebDriver driver) {
-		//super(driver);
-	//	PageFactory.initElements(driver, this);
-	//}
-
-
 	public CheckoutPage(WebDriver driver) {
 		super(driver);
-		// TODO Auto-generated constructor stub
 	}
 	
 	
