@@ -35,8 +35,6 @@ Feature: Product
 		Given  User is on Product  Page
 		When   User increase product count  size  to two 
 		And    User clicks on  sepete ekle
-	# And    User turns back to home page 
-  #	And    User clicks sepetim 
    	Then   There should be "2" pieces of selected product  
 		
 			

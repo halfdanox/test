@@ -12,8 +12,8 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class CheckoutPage extends Menu {
 	
+	public static final int WAIT_SECOND = 25;
 	 
-	//WebDriver driver; 
 	@FindBy(id="addToCart")
 	WebElement addToCartButton;
 	@FindBy(className="quantity")
@@ -21,25 +21,13 @@ public class CheckoutPage extends Menu {
 	
 	@FindBy(css="addToCartForm")
 	List<WebElement> ProductInsideCart ;
-	
-
-
-	//public CheckoutPage(WebDriver driver) {
-		//super(driver);
-	//	PageFactory.initElements(driver, this);
-	//}
-
 
 	public CheckoutPage(WebDriver driver) {
 		super(driver);
-		// TODO Auto-generated constructor stub
 	}
 	
-	
 	public String getProductQuantity(){
-		if(driver == null)
-			System.out.println("driver is null");
-		WebDriverWait w  = new WebDriverWait(driver,25);
+		WebDriverWait w  = new WebDriverWait(driver, WAIT_SECOND);
 	    w.until(ExpectedConditions.presenceOfElementLocated(By.className("quantity")));
 		return  quantity.getAttribute("value");
 	}
