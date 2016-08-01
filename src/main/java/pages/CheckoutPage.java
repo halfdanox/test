@@ -21,11 +21,7 @@ public class CheckoutPage extends Menu {
 	
 	@FindBy(css="addToCartForm")
 	List<WebElement> ProductInsideCart ;
-<<<<<<< HEAD
-=======
-	
 
->>>>>>> ab5a22f4102e6cb3cb35b5b7353040d4d1ec373c
 
 	public CheckoutPage(WebDriver driver) {
 		super(driver);
