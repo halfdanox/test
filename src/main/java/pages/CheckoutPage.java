@@ -12,8 +12,8 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class CheckoutPage extends Menu {
 	
-	public static final int WAIT_SECOND = 25;
-	 
+	public static final int WAIT_SECOND = 30;
+	 //Elle update
 	@FindBy(id="addToCart")
 	WebElement addToCartButton;
 	@FindBy(className="quantity")
